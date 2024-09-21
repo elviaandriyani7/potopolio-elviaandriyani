@@ -45,7 +45,7 @@ header .logo img{
     cursor: pointer;
 }
 
-.navmenu a{
+.navmenu .menu a{
     display: inline-block;
     font-family: 'Releway';
     color:black;
@@ -536,7 +536,7 @@ footer .sosmed .footer-tag i{
 }
 
 .service .service-box{
-    width:95%;
+    width:80%;
     max-width: 100%;
     margin:0 auto;
     display: flex;
@@ -667,6 +667,10 @@ footer .sosmed .footer-tag i{
         display: flex;
         align-items: center;
         position: relative;
+    }
+
+    .navmenu .menu{
+        display:none;
     }
     
     .menu-icon {
