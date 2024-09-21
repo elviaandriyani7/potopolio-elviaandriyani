@@ -943,6 +943,112 @@ footer .sosmed .footer-tag i{
         text-decoration: none;
         margin-bottom: 40px;
     }
+    /* CSS umum untuk desktop */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+header h3 {
+    margin: 0;
+}
+
+.navmenu {
+    display: flex;
+    list-style: none;
+}
+
+.navmenu li {
+    margin-right: 15px;
+}
+
+.navmenu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* CSS untuk mobile (di bawah 768px) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navmenu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navmenu li {
+        margin: 10px 0;
+    }
+
+    .about_img img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .service-box, .portfolio-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .portfolio-box .image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Atur ukuran font agar lebih kecil di layar mobile */
+    h2, h3, h5, p {
+        font-size: 90%;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+/* CSS untuk layar yang lebih kecil (di bawah 480px) */
+@media (max-width: 480px) {
+    h2, h3, h5, p {
+        font-size: 85%;
+    }
+
+    .about_text, .service-box, .portfolio-box {
+        padding: 0 10px;
+    }
     
+    .home h2 {
+        font-size: 24px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+}
 }
 
