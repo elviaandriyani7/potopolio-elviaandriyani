@@ -818,29 +818,83 @@ footer .sosmed .footer-tag i{
         background: #22190e;
         
     }
-    /* General mobile styles */
-@media screen and (max-width: 768px) {
-    header {
-        flex-direction: column; /* Stack items vertically */
+   /* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+.navmenu {
+    list-style-type: none;
+}
+
+.navmenu li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.home {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.about, .service, .portfolio, .contact {
+    padding: 50px 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navmenu {
+        display: flex;
+        flex-direction: column;
         align-items: center;
     }
 
-    .kolom img {
-        width: 100%; /* Ensure images fill the available width */
-        margin-left: 0; /* Reset margin */
+    .navmenu li {
+        margin: 10px 0;
     }
 
-    .about {
-        grid-template-columns: 1fr; /* Stack columns */
-        padding: 0 10px; /* Add some padding */
+    .about_img img,
+    .portfolio-box .image img {
+        width: 100%; /* Make images responsive */
+        max-width: 300px; /* Limit the max width */
     }
 
-    .portfolio .portfolio-box .image {
-        width: 100%; /* Full width for images */
+    .about_text,
+    .service-box,
+    .portfolio-box {
+        text-align: center; /* Center text on smaller screens */
     }
 
-    .contact .contact-main form {
-        grid-template-columns: 1fr; /* Single column on small screens */
+    .contact-main {
+        flex-direction: column; /* Stack contact form and image */
+        align-items: center;
+    }
+
+    .contact-image img {
+        width: 80%; /* Make contact image responsive */
+        max-width: 300px; /* Limit the max width */
+    }
+
+    form {
+        width: 100%; /* Use full width for form */
+    }
+
+    .input {
+        margin: 10px 0; /* Spacing for inputs */
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2, h3 {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
     }
 }
 
