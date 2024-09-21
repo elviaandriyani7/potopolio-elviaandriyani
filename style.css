@@ -39,7 +39,7 @@ header .logo img{
     justify-content: space-between;
 }
 
-.navmenu{
+.navmenu .menu{
     display:flex;
     list-style: none;
     cursor: pointer;
