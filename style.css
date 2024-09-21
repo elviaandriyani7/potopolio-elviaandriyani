@@ -818,5 +818,31 @@ footer .sosmed .footer-tag i{
         background: #22190e;
         
     }
+    /* General mobile styles */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+
+    .kolom img {
+        width: 100%; /* Ensure images fill the available width */
+        margin-left: 0; /* Reset margin */
+    }
+
+    .about {
+        grid-template-columns: 1fr; /* Stack columns */
+        padding: 0 10px; /* Add some padding */
+    }
+
+    .portfolio .portfolio-box .image {
+        width: 100%; /* Full width for images */
+    }
+
+    .contact .contact-main form {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+}
+
 }    
     
