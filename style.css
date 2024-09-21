@@ -1050,5 +1050,152 @@ header h3 {
         font-size: 16px;
     }
 }
+    /* Atur dasar responsif pada semua perangkat */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%; /* Ini akan membantu teks tetap responsif */
+    scroll-behavior: smooth;
+}
+
+/* Mobile-friendly settings */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.navmenu {
+    list-style: none;
+    display: flex;
+}
+
+.navmenu li {
+    margin: 0 10px;
+}
+
+.navmenu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navmenu li a:hover {
+    color: lightgrey;
+}
+
+/* Responsif gambar */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Atur teks agar responsif */
+h2, h3, h1, p {
+    padding: 15px;
+    margin: 0;
+    text-align: center;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+}
+
+/* Responsif layout service */
+.service-box, .portfolio-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Responsive Contact */
+.contact-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact-image img {
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Media Queries for smaller devices */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .navmenu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .about {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .about_img, .about_text {
+        text-align: center;
+    }
+
+    .service-box, .portfolio-box {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        padding: 10px;
+    }
+}
+
+/* Media Queries for very small devices */
+@media (max-width: 480px) {
+    h2, h3, h1 {
+        font-size: 1.5rem;
+    }
+
+    .navmenu {
+        font-size: 0.8rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .contact-main {
+        padding: 10px;
+    }
+}
+
 }
 
