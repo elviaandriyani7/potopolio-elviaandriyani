@@ -943,36 +943,5 @@ footer .sosmed .footer-tag i{
         text-decoration: none;
         margin-bottom: 40px;
     }
-    /* Media query for mobile devices */
-@media screen and (max-width: 768px) {
-  /* Header adjustments */
-  header {
-    /* ... */
-  }
 
-  /* Home section adjustments */
-  .home {
-    /* ... */
-  }
-
-  /* About section adjustments */
-  .about {
-    /* ... */
-  }
-
-  /* Portfolio adjustments */
-  .portfolio {
-    /* ... */
-  }
-
-  /* Contact adjustments */
-  .contact {
-    /* ... */
-  }
-
-  /* Footer adjustments */
-  footer {
-    /* ... */
-  }
-}
 }
